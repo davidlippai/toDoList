@@ -14,18 +14,8 @@ addButton.addEventListener("click", function(){
  })
 })
 
-//------------------Delete Btn
-
 let deleteButton = document.getElementById("deleteBtn");
 
-deleteButton.addEventListener("click", function(){
+deleteButton.addEventListener('click', function(){
   toDoContainer.removeChild(paragraph);
 })
-
-
-let newListBtn = document.getElementById("newList");
-
-newListBtn.addEventListener("click", function(){
-  container.removeChild(toDoContainer);
-})
-
