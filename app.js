@@ -12,10 +12,10 @@ addButton.addEventListener("click", function(){
   paragraph.addEventListener("click", function(){
     paragraph.classList.add("paragraph-done");
  })
-})
-
-let deleteButton = document.getElementById("deleteBtn");
+ let deleteButton = document.getElementById("deleteBtn");
 
 deleteButton.addEventListener('click', function(){
   toDoContainer.removeChild(paragraph);
 })
+})
+
