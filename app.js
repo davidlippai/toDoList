@@ -35,15 +35,15 @@ toDoButton.addEventListener('click', function(event){
     itemDoneBtn.classList.add("itemDoneBtn");
 
     itemDoneBtn.addEventListener('click',function(){
-      newItem.classList.add("itemDone");
+      newItem.classList.toggle("itemDone");
     })
 
 
-  // Give a class to the Item what is already done!
+  /* Give a class to the Item what is already done!
     newItem.addEventListener('click', function(){
       newItem.classList.add("itemDone");
       itemDone = document.createElement("button");
-    })
+    })*/
 
   });
 
