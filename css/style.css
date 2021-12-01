@@ -65,10 +65,13 @@ form button:hover {
     display: grid;
     grid-gap: 0.35rem;
     grid-template-columns: 1fr auto auto;
+    animation: itemOpacity;
+    animation-duration: 1s;
 }
 
 .itemDone {
     text-decoration: rgb(150, 11, 11) line-through;
+    transition: all 0.5s ease-in-out;
 }
 
 .itemDoneBtn {
@@ -98,10 +101,31 @@ form button:hover {
     padding: 0.2rem;
     border-radius: 0.25rem;
     color: white;
+    transition: ease-in-out;
+    animation: itemTrash;
+    animation-duration: 1s;
 }
 
 .deleteOne:hover {
     background-color: rgb(156, 35, 35);
     cursor: pointer;
     transform: scale(1.05);
+}
+
+@keyframes itemOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes itemTrash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
