@@ -5,72 +5,103 @@
 }
 
 body {
-    background: rgb(42, 104, 101);
+    font-family: "Playfair Display", serif;
+    background: linear-gradient(120deg, #275a34, #27b989);
+    color: white;
+    min-height: 100vh;
+    letter-spacing: 0.15rem;
 }
 
-h2 {
-    color: rgb(2, 2, 2);
-    text-align: center;
-    margin: 1rem auto;
+header {
+    font-size: 1rem;
 }
 
-div#container {
-    border: solid 1px black;
-    width: 35%;
-    display: grid;
-    margin: 5vh auto;
-    background-color: rgb(216, 216, 216);
-    border-radius: 0.5rem;
-    letter-spacing: 0.2rem;
-    padding: 1rem 0.8rem;
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-label {
-    text-align: center;
+form input {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
 }
 
-button,
-input {
-    margin: 0.25rem auto;
+form button {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
 }
 
-input {
-    width: 40%;
+form input,
+form button {
+    padding: 0.25rem;
+    font-size: 1.1rem;
+    border: none;
+    background: white;
 }
 
-button {
-    width: 12%;
-    border-radius: 0.25rem;
-    border: solid 1px black;
-    padding: 0.15rem;
-    display: inline;
-    float: right;
-}
-
-button:hover {
-    border: solid 1px grey;
-    color: grey;
-    box-shadow: 2px -2px 2px grey;
+form button {
+    color: #275a34;
+    background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-div#toDoList {
-    margin-top: 1.5rem;
+form button:hover {
+    background-color: #275a34;
+    color: white;
 }
 
-.paragraph-styling {
-    margin: 0;
+.newItemClass {
+    margin: 0 auto;
+    border-bottom: solid 1px black;
+    width: 30%;
+    padding: 0.25rem;
     cursor: pointer;
     font-size: 1rem;
-    color: red;
+    justify-content: space-between;
+    display: grid;
+    grid-gap: 0.35rem;
+    grid-template-columns: 1fr auto auto;
 }
 
-.paragraph-done {
-    text-decoration: line-through;
-    margin-left: 1rem;
-    color: black;
+.itemDone {
+    text-decoration: rgb(150, 11, 11) line-through;
 }
 
-.nonVisible {
-    visibility: hidden;
+.itemDoneBtn {
+    display: inline;
+    background-color: rgb(50, 182, 38);
+    border: none;
+    width: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.itemDoneBtn:hover {
+    background-color: rgb(63, 218, 49);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* DELETE btN */
+.deleteOne {
+    display: inline;
+    background-color: rgb(112, 26, 26);
+    border: none;
+    width: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.deleteOne:hover {
+    background-color: rgb(156, 35, 35);
+    cursor: pointer;
+    transform: scale(1.05);
 }
