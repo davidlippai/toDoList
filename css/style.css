@@ -102,8 +102,6 @@ form button:hover {
     border-radius: 0.25rem;
     color: white;
     transition: ease-in-out;
-    animation: itemTrash;
-    animation-duration: 1s;
 }
 
 .deleteOne:hover {
